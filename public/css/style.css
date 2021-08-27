@@ -1,0 +1,687 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    transition: all 0.4s;
+    /* background-color: rgba(0, 83, 138, 0.15); */
+    background: linear-gradient(#626262, rgba(255, 255, 255, 0));
+    /* background-image: linear-gradient(to bottom, #8e9eb0 , rgb(255, 255, 255)); */
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-item a.btn {
+    border-radius: 20px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #dadada;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: linear 0.2s;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+}
+
+
+/* Change navbar styling on small viewports */
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+        color: #555;
+    }
+}
+
+
+/* ========================================== HOME FIRST SECTION ==================================================== */
+
+.home-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/hero1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-color-overlay {
+    /* background-color: #8e9eb0; */
+    background-image: linear-gradient(to right, #8e9eb0, rgb(255, 255, 255));
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+
+.home-intro {
+    margin-top: -490px;
+}
+
+.home-intro h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-intro button {
+    border-radius: 20px;
+    width: 150px;
+    margin-top: 5%;
+    padding: 8px;
+    border: none;
+}
+
+
+/* ================================================= HOME 2 SECTION ========================================= */
+
+.home2 {
+    margin-top: 177px;
+}
+
+.home2 .contact-info {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.home2 .contact-info:hover,
+.home2-icon .fa {
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.home2 .contact-info:hover {
+    background-color: #3c90f7;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.home2 .contact-info:hover #home2-h5,
+.home2 .contact-info:hover #home2-h4 {
+    color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.home2 .contact-info:hover .home2-icon .fa {
+    background-color: white;
+    transition: ease-in-out 0.3s;
+}
+
+.home2-icon .fa {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(60, 144, 247, .05);
+    border-radius: 50%;
+    text-align: center;
+    color: #3c90f7;
+}
+
+.home2 h5 {
+    font-size: 15px;
+    color: #8e9eb0;
+}
+
+.home2 h4 {
+    line-height: 15px;
+    color: #3c90f7;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* ------------------------------------------------------ ABOUUT SECTION ------------------------------------------ */
+
+.about {
+    margin-top: 5%;
+}
+
+.about .about-img {
+    /* background-image: url("../images/about.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* padding: 5%; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about .about-text {
+    /* padding: 5%; */
+}
+
+.about .about-text h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8e9eb0;
+}
+
+.about .about-text h2 {
+    color: #3e85da;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.about .about-text p {
+    color: #8e9eb0;
+    line-height: 25px;
+}
+
+.about button {
+    border-radius: 30px;
+    padding: 8px;
+    width: 150px;
+    border: none;
+}
+
+.about .contact-us {
+    background-color: #3e85da;
+}
+
+.about .read-more {
+    background-color: #8cba51;
+}
+
+
+/* ------------------------------------------------------- MISSION ---------------------------------------- */
+
+.mission {
+    margin-top: 10%;
+    background-color: #e9e9ea;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.mission .mission-text {
+    padding-right: 10%;
+}
+
+.mission h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8e9eb0;
+}
+
+.mission h2 {
+    color: #292427;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.mission h2 span {
+    color: #3e85da;
+}
+
+.mission p {
+    color: #778390;
+    line-height: 25px;
+}
+
+
+/* --------------------------------------------------------- OUR SERVICES ----------------------------------------- */
+
+.our-services {
+    margin-top: 10%;
+}
+
+.our-services h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8e9eb0;
+}
+
+.our-services h2 {
+    color: #3e85da;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.our-services h2 span {
+    color: #292427;
+}
+
+.our-services .row {
+    margin-top: 3%;
+}
+
+.our-services .service-item {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10%;
+}
+
+.our-services .fa {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(60, 144, 247, .05);
+    border-radius: 50%;
+    text-align: center;
+    color: #3c90f7;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.our-services h3 {
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+.our-services p {
+    color: #778390;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.our-services .service-item:hover {
+    background-color: #8cba51;
+    color: white;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.service-item:hover #services-fa {
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+
+
+/* ---------------------------------------------------------- OUR TEAM ------------------------------------------- */
+
+.team {
+    width: 100%;
+    margin-top: 10%;
+    background-color: #e9e9ea;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.team h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8e9eb0;
+}
+
+.team h2 {
+    color: #3c90f7;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.team h2 span {
+    color: #292427;
+}
+
+.team .card-deck {
+    margin-top: 5%;
+}
+
+.team .card-body {
+    background-color: #3c90f7;
+}
+
+.team .card .card-title {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+.team .card .card-text {
+    text-align: left;
+    color: #ffffffdc;
+    line-height: 1;
+}
+
+.team .card-img-top:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgb(138, 138, 138);
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+}
+
+
+/* -------------------------------------------- OUR CLIENTS ------------------------------------ */
+
+.clients {
+    margin-top: 20%;
+    background-color: #e9e9ea;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.clients h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #8e9eb0;
+}
+
+.clients h2 {
+    color: #3c90f7;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.clients h2 span {
+    color: #292427;
+}
+
+.clients .client-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25%;
+    background-color: tomato;
+    background-image: url("../images/doctor2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clients .row {
+    margin-top: 5%;
+}
+
+.clients .client-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10%;
+    margin-top: 5%;
+}
+
+.clients .client-item p {
+    font-style: italic;
+    margin-top: 10%;
+}
+
+.clients .client-item h5 {
+    font-style: italic;
+    margin-top: 10%;
+    text-transform: capitalize;
+}
+
+
+/* ----------------------------------------------- FOOTER -------------------------------------------- */
+
+.myfooter {
+    padding: 10%;
+    background-color: #3c90f7;
+}
+
+.myfooter h5 {
+    color: white;
+}
+
+.myfooter ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 5%;
+}
+
+.myfooter ul li {
+    color: #e9e9eaa2;
+    text-decoration: underline;
+    line-height: 2;
+}
+
+.myfooter ul li:hover {
+    color: white;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.myfooter .social ul li {
+    display: inline-block;
+    margin: 0 2px 2px 0;
+}
+
+.myfooter .social .fa {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    color: #3c90f7;
+    font-size: 15px;
+}
+
+.myfooter .social .fa:hover {
+    opacity: 0.7;
+    transition: ease-in-out 0.2s;
+}
+
+.myfooter .social h6 {
+    color: white;
+    margin-top: 5%;
+}
+
+.myfooter .social .emailinput {
+    background-color: #3c90f7;
+    color: white;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+.myfooter .social ::placeholder {
+    color: white;
+}
+
+
+/* ===================================================================================================================
+                                                                           
+                                                ABOUT PAGE STYLING
+
+=================================================================================================================== */
+
+.about-home-bg .breadcrumb {
+    width: 150px;
+}
+
+.about-home-bg {
+    width: 100%;
+    height: 300px;
+    background-color: #3c90f7;
+}
+
+.about-home-bg .container {
+    padding-top: 130px;
+}
+
+
+/* ===================================================================================================================
+                                                                           
+                                                OUR SERVICES PAGE STYLING
+
+=================================================================================================================== */
+
+.services-home-bg {
+    width: 100%;
+    height: 300px;
+    background-color: #3c90f7;
+}
+
+.services-home-bg h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.services-home-bg .container {
+    padding-top: 130px;
+}
+
+#services-page-our-services {
+    margin-top: 5%;
+}
+
+.services-home-bg ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding: 2em; */
+    color: #333;
+}
+
+.services-home-bg ul li {
+    display: inline-block;
+    position: relative;
+    padding-right: 2em;
+    margin: 0;
+}
+
+.services-home-bg ul li:after {
+    content: '>';
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 2em;
+    text-align: center;
+}
+
+.services-home-bg ul li:last-child {
+    font-weight: bold;
+}
+
+.services-home-bg ul li:last-child:after {
+    content: '';
+}
+
+.services-home-bg ul a {
+    text-decoration: none;
+    display: inline-block;
+    color: #333;
+    white-space: nowrap;
+}
+
+.services-home-bg ul a:hover {
+    text-decoration: underline;
+}
+
+
+/* ===================================================================================================================
+                                                                           
+                                                DEPARTMENTS PAGE STYLING
+
+=================================================================================================================== */
+
+.our-departments .flaticon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: rgba(60, 144, 247, .05);
+    border-radius: 50%;
+    text-align: center;
+    color: #3c90f7;
+    font-size: 35px;
+    text-shadow: 1px 1px 1px #2867b4;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.service-item:hover .flaticon {
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+
+.our-departments a {
+    text-decoration: none;
+}
+
+.our-departments a:hover {
+    text-decoration: none;
+}
+
+
+/* ===================================================================================================================
+                                                                           
+                                                CONTACT PAGE STYLING
+
+=================================================================================================================== */
+
+.contact-form {
+    margin-top: 5%;
+}
+
+.contact-form .contact-form-right .fa {
+    color: #3c90f7;
+    font-size: 30px;
+}
+
+.contact-form .contact-form-right {
+    line-height: 4;
+}
+
+.contact-form .contact-form-right h4 {
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+}
+
+.map {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* ===================================================================================================================
+                                                                           
+                                                DEPARTMENTS LIST  PAGE STYLING
+
+=================================================================================================================== */
+
+.departments-list-container {
+    margin-top: 10%;
+    margin-bottom: 10%
+}
