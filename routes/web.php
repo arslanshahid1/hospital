@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'App\Http\Controllers\pageController@home')->name('home');
-Route::post('/save', 'App\Http\Controllers\pageController@save')->name('save');
+Route::post('/saveAppointments', 'App\Http\Controllers\pageController@saveAppointments')->name('saveAppointments');
+Route::post('/saveContact', 'App\Http\Controllers\pageController@saveContact')->name('saveContact');
 Route::get('/about', 'App\Http\Controllers\pageController@about')->name('about');
 Route::get('/services', 'App\Http\Controllers\pageController@services')->name('services');
 Route::get('/departments', 'App\Http\Controllers\pageController@departments')->name('departments');

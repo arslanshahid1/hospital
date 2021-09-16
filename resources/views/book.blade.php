@@ -19,7 +19,7 @@
     <br>
     @endif
     <div class="col-sm-6 m-auto">
-      <form action="{{route('save')}}" method="post">
+      <form action="{{route('saveAppointments')}}" method="post">
       @csrf
         <div class="form-group">
           <label for="exampleInputName">Name *</label>
@@ -39,7 +39,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Message *</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="State your appointment request here with preferred date below. Our representative will call you back as soon as possible"  name="message" required></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="State your appointment request here with preferred date below."  name="message" required></textarea>
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Date *</label>

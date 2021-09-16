@@ -53,7 +53,7 @@
               <a class="nav-link" href="{{route('contact')}}">Contact</a>
             </li>
             <li class="nav-item ml-1">
-              <a class=" btn btn-primary px-3" href="{{route('book')}}">Book Appointment</a>
+              <a class=" btn btn-warning px-3" href="{{route('book')}}">Book Appointment</a>
             </li>
 
           </ul>
